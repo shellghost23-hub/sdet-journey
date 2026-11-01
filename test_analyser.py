@@ -1,5 +1,3 @@
-results = ["PASS", "FAIL", "SKIP", "PASS", "FAIL", "SKIP", "ERROR"]
-
 def analyze_results(results):
     pass_num = 0
     fail_num = 0
@@ -20,4 +18,6 @@ def analyze_results(results):
     print(f"Skipped: {skip_num}")
     print(f"Errored: {error_num}")
 
-analyze_results(results)
+if __name__ == "__main__" :
+    results = ["PASS", "FAIL", "SKIP", "PASS", "FAIL", "SKIP", "ERROR"]
+    analyze_results(results)
